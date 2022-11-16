@@ -1,0 +1,122 @@
+/* @IMPORT START HERE */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap");
+
+:root {
+  --clr-neutral-900: #111;
+  --clr-neutral-100: #ffffff;
+  --clr-accent-400: #f7114e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+h1 {
+  font-size: 1.3rem;
+  color: #f7114e;
+  padding: 50px 0;
+}
+
+h1 span {
+  color: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--clr-neutral-900);
+  line-height: 1.6;
+  padding-right: 15em;
+}
+
+.container {
+  color: var(--clr-neutral-100);
+  background-image: url(./img/patrick-langwallner-ebd97HAQbMI-unsplash.jpg);
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 350px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 500ms ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.box {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+    hsl(0 0% 0% /0),
+    hsl(20 0% 0% /0.3) 20%,
+    hsl(0 0% 0% /1)
+  );
+  transform: translateY(65%);
+  transition: 500ms ease;
+}
+
+.box > *:not(.card-title) {
+  opacity: 0;
+  transition: 500ms linear;
+}
+
+.container:hover .box > *:not(.card-title) {
+  opacity: 1;
+}
+
+.container:hover .box {
+  transform: translateY(0);
+}
+
+.card-title {
+  position: relative;
+  font-size: 1.5rem;
+  max-width: max-content;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  bottom: 0;
+  width: calc(100% + var(--padding));
+  background: var(--clr-accent-400);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 500ms ease;
+}
+
+.container:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.card-body {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-accent-400);
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.25rem;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-neutral-100);
+}
