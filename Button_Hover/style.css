@@ -7,6 +7,15 @@
   font-family: "Poppins";
 }
 
+h1 {
+  padding-bottom: 300px;
+  color: #fff;
+}
+
+h1 span {
+  color: #f7114e;
+}
+
 body {
   display: grid;
   place-items: center;
