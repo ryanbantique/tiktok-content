@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+.box {
+  background: red;
+  height: 100px;
+  width: 100px;
+}
