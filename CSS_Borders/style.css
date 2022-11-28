@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   background-color: #111;
 }
@@ -23,10 +24,38 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+h1 span {
+  color: #f7114e;
+}
+
+.solid {
+  padding: 10px;
+  color: #fff;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+.solid:hover {
+  border-color: #f7114e;
+  border-style: solid;
+}
+
+h4 {
+  color: #f7114e;
+  margin-bottom: -10px;
+  font-weight: 400;
+}
+
 .dotted {
   padding: 10px;
   color: #fff;
   border: 3px solid #fff;
+  cursor: pointer;
 }
 
 .dotted:hover {
@@ -38,9 +67,46 @@ body {
   padding: 10px;
   color: #fff;
   border: 3px solid #fff;
+  cursor: pointer;
 }
 
 .dashed:hover {
   border-color: #f7114e;
   border-style: dashed;
+}
+
+.double {
+  padding: 10px;
+  color: #fff;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+.double:hover {
+  border-color: #f7114e;
+  border-style: double;
+}
+
+.grove {
+  padding: 10px;
+  color: #fff;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+.grove:hover {
+  border-color: #f7114e;
+  border-style: groove;
+}
+
+.mixed {
+  padding: 10px;
+  color: #fff;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+.mixed:hover {
+  border-color: #f7114e;
+  border-style: dotted dashed solid double;
 }
