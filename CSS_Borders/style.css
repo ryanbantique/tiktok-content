@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  transition: 0.3s ease;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #111;
+}
+
+.container {
+  width: 20%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.dotted {
+  padding: 10px;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.dotted:hover {
+  border-color: #f7114e;
+  border-style: dotted;
+}
+
+.dashed {
+  padding: 10px;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.dashed:hover {
+  border-color: #f7114e;
+  border-style: dashed;
+}
