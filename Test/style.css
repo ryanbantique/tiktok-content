@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  height: 400px;
+  width: 300px;
+  background: red;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.box1 h2 {
+  position: relative;
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.box1 p {
+  position: relative;
+  top: 60px;
+  border: 1px solid #fff;
+  text-align: left;
+}
